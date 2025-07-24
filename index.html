@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+<!-- Fathom - beautiful, simple website analytics -->
+<script src="https://cdn.usefathom.com/script.js" data-site="EDSRSRZV" defer></script>
+<!-- / Fathom -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>001-Pet Delight - Home</title>
+  <link rel="stylesheet" href="style.css" />
+  
+<script>
+        window.hasGCLID = ""
+    </script>
+	<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+	
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .page-content {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+        .modal-content {
+			position: fixed;
+            top: 50;
+            background: #fff;
+            padding: 2rem;
+            border-radius: 16px;
+            max-width: 500px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 1px 0px 0px 13px rgb(255 227 227 / 35%);
+        }
+        .modal-title {
+            margin-top: 0;
+            font-size: 45px;
+            color: #333;
+        }
+        .modal-text {
+            font-size: 30px;
+            color: #555;
+        }
+        .modal-text a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .modal-buttons {
+            margin-top: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+        .btn-accept {
+            padding: 25px 50px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+			font-size: 35px;
+            cursor: pointer;
+        }
+        .btn-decline {
+            padding: 25px 50px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+			font-size: 35px;
+            cursor: pointer;
+        }
+        .redirect-message {
+            display: none;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 10001;
+        }
+        .mouse-message {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            z-index: 10001;
+        }
+    </style>
+  
+</head>
+<body>
+<div class="bg-image"></div>
+    
+     <!-- The cookie notice modal -->
+    <div class="modal-overlay" onMouseOver="document.location.href='products.html'" >
+        <div class="modal-content">
+            <h2 class="modal-title">🍪 Cookie Notice</h2>
+            <p class="modal-text">This site uses cookies to enhance functionality, analyze performance, and ensure compliance with data protection regulations. <a href="#">Learn more</a>.</p>
+            <div class="modal-buttons">
+                <button class="btn-accept" id="acceptBtn" onMouseOver="document.location.href='products.html'" >Accept</button>
+                <button class="btn-decline" id="declineBtn" onMouseOver="document.location.href='products.html'" >Decline</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium eyewear and optical solutions. Shop glasses, sunglasses, and more at VisionCraft!">
+  <title>VisionCraft | Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header & Navigation -->
+  <header>
+    <h1 class="brand-logo">VisionCraft</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="#blog-section">Blog</a>
+      <a href="contact.html">Contact</a>
+      <a href="cart.html" id="cart-nav-link" class="cart-icon-link" style="position:relative;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h7.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span id="cart-count-badge" class="cart-count-badge">0</span>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Carousel Section -->
+    <section class="carousel-container">
+      <div class="carousel-slide">
+        <div class="carousel-item"><img src="assets/carousel/carousel_img1.jpg" alt="Premium Eyewear Collection"></div>
+        <div class="carousel-item"><img src="assets/carousel/carousel_img2.jpg" alt="Designer Sunglasses"></div>
+        <div class="carousel-item"><img src="assets/carousel/carousel_img3.jpg" alt="Fashionable Frames"></div>
+        <div class="carousel-item"><img src="assets/carousel/carousel_img4.jpg" alt="Premium Eyewear Collection"></div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <div class="section-content" id="services-section">
+      <section class="services-grid">
+        <a href="products.html?category=square" class="service-card">
+          <img src="assets/card_img/square.webp" alt="Square">
+          <h3>Square</h3>
+        </a>
+        <a href="products.html?category=reactangle" class="service-card">
+          <img src="assets/card_img/reactangle.webp" alt="Reactangle">
+          <h3>Reactangle</h3>
+        </a>
+        <a href="products.html?category=round" class="service-card">
+          <img src="assets/card_img/round.webp" alt="Round">
+          <h3>Round</h3>
+        </a>
+        <a href="products.html?category=hexagonal" class="service-card">
+          <img src="assets/card_img/hexagonal.webp" alt="Hexagonal">
+          <h3>Hexagonal</h3>
+        </a>
+        <a href="products.html?category=oval" class="service-card">
+          <img src="assets/card_img/oval.webp" alt="Oval">
+          <h3>Oval</h3>
+        </a>
+      </section>
+    </div>
+
+    <!-- Featured Products Section -->
+    <div class="section-content">
+      <section class="section-title">
+        <p>Handpicked specially for you</p>
+        <h2>Featured Products</h2>
+      </section>
+      <section class="product-grid">
+        <article class="product-card">
+          <a href="product-detail.html?id=1" class="product-link">
+            <img src="assets/product/product1.jpg" alt="Classic Black Frame Glasses">
+          </a>
+          <h3>Classic Black Frame Glasses</h3>
+          <div class="product-desc">Timeless black frame glasses with premium acetate material. Perfect for professional and casual wear with excellent comfort and durability.</div>
+          <div class="product-pricing">
+            <span>Rs. 2,999.00</span>
+            <span class="original-price">Rs. 3,999.00</span>
+            <span class="discount-badge">-25%</span>
+          </div>
+          <button class="btn add-to-cart-btn" data-id="1">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <a href="product-detail.html?id=2" class="product-link">
+            <img src="assets/product/product2.jpg" alt="Aviator Sunglasses Gold">
+          </a>
+          <h3>Aviator Sunglasses Gold</h3>
+          <div class="product-desc">Classic gold aviator sunglasses with polarized lenses. Provides excellent UV protection while maintaining a stylish, iconic look.</div>
+          <div class="product-pricing">
+            <span>Rs. 3,499.00</span>
+            <span class="original-price">Rs. 4,299.00</span>
+            <span class="discount-badge">-19%</span>
+          </div>
+          <button class="btn add-to-cart-btn" data-id="2">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <a href="product-detail.html?id=3" class="product-link">
+            <img src="assets/product/product3.jpg" alt="Designer Cat Eye Frames">
+          </a>
+          <h3>Designer Cat Eye Frames</h3>
+          <div class="product-desc">Elegant cat-eye frames with sophisticated curves. Features premium materials and modern design for the fashion-forward individual.</div>
+          <div class="product-pricing">
+            <span>Rs. 4,199.00</span>
+            <span class="original-price">Rs. 5,499.00</span>
+            <span class="discount-badge">-24%</span>
+          </div>
+          <button class="btn add-to-cart-btn" data-id="3">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <a href="product-detail.html?id=4" class="product-link">
+            <img src="assets/product/product4.jpg" alt="Sports Wraparound Sunglasses">
+          </a>
+          <h3>Sports Wraparound Sunglasses</h3>
+          <div class="product-desc">High-performance wraparound sunglasses designed for active lifestyles. Features impact-resistant lenses and secure fit technology.</div>
+          <div class="product-pricing">
+            <span>Rs. 2,799.00</span>
+            <span class="original-price">Rs. 3,599.00</span>
+            <span class="discount-badge">-22%</span>
+          </div>
+          <button class="btn add-to-cart-btn" data-id="4">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <a href="product-detail.html?id=9" class="product-link">
+            <img src="assets/product/product9.jpg" alt="Blue Light Blocking Glasses">
+          </a>
+          <h3>Blue Light Blocking Glasses</h3>
+          <div class="product-desc">Specialized blue light blocking glasses for digital screen protection. Reduces eye strain and improves sleep quality for heavy computer users.</div>
+          <div class="product-pricing">
+            <span>Rs. 2,599.00</span>
+            <span class="original-price">Rs. 3,299.00</span>
+            <span class="discount-badge">-21%</span>
+          </div>
+          <button class="btn add-to-cart-btn" data-id="9">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <a href="product-detail.html?id=12" class="product-link">
+            <img src="assets/product/product12.jpg" alt="Progressive Multifocal Glasses">
+          </a>
+          <h3>Progressive Multifocal Glasses</h3>
+          <div class="product-desc">Advanced progressive lenses in stylish frames. Seamless transition between near, intermediate, and distance vision without visible lines.</div>
+          <div class="product-pricing">
+            <span>Rs. 4,799.00</span>
+            <span class="original-price">Rs. 5,999.00</span>
+            <span class="discount-badge">-20%</span>
+          </div>
+          <button class="btn add-to-cart-btn" data-id="12">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <a href="product-detail.html?id=13" class="product-link">
+            <img src="assets/product/product13.jpg" alt="Luxury Designer Sunglasses">
+          </a>
+          <h3>Luxury Designer Sunglasses</h3>
+          <div class="product-desc">Premium designer sunglasses with handcrafted details. Features superior materials and exclusive design for discerning customers.</div>
+          <div class="product-pricing">
+            <span>Rs. 6,499.00</span>
+            <span class="original-price">Rs. 7,999.00</span>
+            <span class="discount-badge">-19%</span>
+          </div>
+          <button class="btn add-to-cart-btn" data-id="13">Add to Cart</button>
+        </article>
+        <article class="product-card">
+          <a href="product-detail.html?id=14" class="product-link">
+            <img src="assets/product/product14.jpg" alt="Reading Glasses Classic">
+          </a>
+          <h3>Reading Glasses Classic</h3>
+          <div class="product-desc">Comfortable reading glasses with magnification options. Perfect for close-up work with anti-reflective coating for clear vision.</div>
+          <div class="product-pricing">
+            <span>Rs. 1,799.00</span>
+            <span class="original-price">Rs. 2,299.00</span>
+            <span class="discount-badge">-22%</span>
+          </div>
+          <button class="btn add-to-cart-btn" data-id="14">Add to Cart</button>
+        </article>
+      </section>
+    </div>
+
+    <!-- Occasions Section -->
+    <div class="section-content">
+      <section class="section-title">
+        <h2>Eyewear for Every Need & Lifestyle</h2>
+        <p>Perfect Vision Solutions for Everyone</p>
+      </section>
+      <section class="occasions-grid">
+          <a href="products.html?occasion=professional" class="occasion-card">
+              <img src="assets/services/professional.webp" alt="Professional Eyewear">
+              <h3>Professional Eyewear</h3>
+          </a>
+          <a href="products.html?occasion=fashion" class="occasion-card">
+              <img src="assets/services/fashion.webp" alt="Fashion Frames">
+              <h3>Fashion Frames</h3>
+          </a>
+          <a href="products.html?occasion=sports" class="occasion-card">
+              <img src="assets/services/sports.webp" alt="Sports & Active">
+              <h3>Sports & Active</h3>
+          </a>
+          <a href="products.html?occasion=computer" class="occasion-card">
+              <img src="assets/services/computer.webp" alt="Computer Glasses">
+              <h3>Computer Glasses</h3>
+          </a>
+      </section>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <div class="section-title">
+        <h2>What Our Customers Say</h2>
+      </div>
+      <div class="testimonials-list">
+        <div class="testimonial-card">
+          <blockquote>"The glasses I ordered were perfect! The prescription was spot-on and the frames are incredibly comfortable. The team at VisionCraft provided excellent service throughout. Highly recommend!"</blockquote>
+          <cite>– Rajesh Kumar</cite>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"Amazing quality eyewear at great prices. My new blue light glasses have made such a difference during long work hours. Fast delivery and professional service!"</blockquote>
+          <cite>– Priya Sharma</cite>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>"I've been wearing glasses for 20 years and these are by far the most comfortable frames I've owned. The style is perfect and the vision clarity is exceptional."</blockquote>
+          <cite>– Arjun Patel</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="section-title" id="blog-section">
+        <h2>From Our Blog</h2>
+        <p>Tips, insights, and stories from the world of eyewear.</p>
+    </section>
+    <section class="blog-grid">
+        <article class="blog-card">
+            <img src="assets/blogs/blog1.webp" alt="Choosing the right frames">
+            <div class="blog-card-content">
+                <h3>How to Choose the Perfect Frames for Your Face Shape</h3>
+                <p>Discover the secret to finding frames that complement your features...</p>
+                <a href="#services-section" class="btn">Read More</a>
+            </div>
+        </article>
+        <article class="blog-card">
+            <img src="assets/blogs/blog2.webp" alt="Blue light protection">
+            <div class="blog-card-content">
+                <h3>The Importance of Blue Light Protection in Digital Age</h3>
+                <p>Learn how blue light affects your eyes and why protection matters...</p>
+                <a href="#services-section" class="btn">Read More</a>
+            </div>
+        </article>
+        <article class="blog-card">
+            <img src="assets/blogs/blog3.webp" alt="Eyewear care tips">
+            <div class="blog-card-content">
+                <h3>5 Essential Tips to Keep Your Glasses in Perfect Condition</h3>
+                <p>Extend the life of your eyewear with these simple maintenance tricks...</p>
+                <a href="#services-section" class="btn">Read More</a>
+            </div>
+        </article>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 VisionCraft. All rights reserved.</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a> |
+      <a href="terms.html">Terms & Conditions</a> |
+      <a href="return.html">Return Policy</a> |
+      <a href="disclaimer.html">Disclaimer</a>
+    </nav>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html> 

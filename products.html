@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop our wide selection of eyeglasses, sunglasses, and optical solutions.">
+    <title>VisionCraft | All Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <h1 class="brand-logo">VisionCraft</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Shop</a>
+            <a href="about.html">About</a>
+            <a href="index.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="cart.html" id="cart-nav-link" class="cart-icon-link" style="position:relative;">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h7.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                <span id="cart-count-badge" class="cart-count-badge">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <main style="display: flex; gap: 2.5rem; max-width: 1200px; margin: 0 auto;">
+        <!-- Sidebar Filters -->
+        <aside class="filter-sidebar">
+            <div class="filter-card">
+                <h3 class="filter-title">Categories</h3>
+                <div id="category-buttons" class="category-btn-group">
+                    <button class="category-btn" data-category="all">All</button>
+                    <button class="category-btn" data-category="eyeglasses">Eyeglasses</button>
+                    <button class="category-btn" data-category="sunglasses">Sunglasses</button>
+                    <button class="category-btn" data-category="sports">Sports</button>
+                    <button class="category-btn" data-category="reading">Reading</button>
+                    <button class="category-btn" data-category="computer">Computer</button>
+                    <button class="category-btn" data-category="kids">Kids</button>
+                    <button class="category-btn" data-category="luxury">Luxury</button>
+                    <button class="category-btn" data-category="vintage">Vintage</button>
+                    <button class="category-btn" data-category="business">Business</button>
+                    <button class="category-btn" data-category="fashion">Fashion</button>
+                    <button class="category-btn" data-category="safety">Safety</button>
+                    <button class="category-btn" data-category="premium">Premium</button>
+                </div>
+                <hr style="margin: 2rem 0 1.5rem 0; border: none; border-top: 1px solid #eee;">
+                <h3 class="filter-title">Filter by Price</h3>
+                <div class="price-filter-group">
+                    <input type="range" id="price-min" min="1500" max="10000" value="1500">
+                    <input type="range" id="price-max" min="1500" max="10000" value="10000">
+                    <div class="price-values">
+                        <span id="min-price-label">Rs. 1500</span> - <span id="max-price-label">Rs. 10000</span>
+                    </div>
+                    <button id="apply-price-filter" class="btn" style="margin-top: 1rem;">Apply</button>
+                </div>
+            </div>
+        </aside>
+        <!-- Main Product Grid -->
+        <section style="flex: 1;">
+            <section class="section-title">
+                <h2>Our Products</h2>
+                <p>Find the perfect eyewear for your vision and style.</p>
+            </section>
+            <section id="product-grid-main" class="product-grid">
+                <!-- Products will be dynamically inserted here by products.js -->
+            </section>
+            <div id="pagination" class="pagination"></div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 VisionCraft. All rights reserved.</p>
+        <nav>
+            <a href="privacy.html">Privacy Policy</a> |
+            <a href="terms.html">Terms & Conditions</a> |
+            <a href="return.html">Return Policy</a> |
+            <a href="disclaimer.html">Disclaimer</a>
+        </nav>
+    </footer>
+
+    <script src="js/products-data.js"></script>
+    <script src="js/products.js"></script>
+</body>
+</html> 
